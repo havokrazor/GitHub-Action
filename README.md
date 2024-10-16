@@ -37,3 +37,11 @@ GitHub-hosted runners are the default option provided by GitHub for running work
 *GitHub-Hosted Runners* are great if you want an easy-to-use, scalable, and managed CI/CD environment without worrying about infrastructure or maintenance.
 
 *Self-Hosted Runners* are useful when you need more control over the environment, want to avoid GitHub’s job execution limits, or have specific security and customization requirements.
+
+### How to execute Self-Hosted Github ###
+
+- Launch your EC2 instance with port 443 and port 80 active on both inbound and outbound rule
+- Go to the youe Git repo and to go it's setting
+- Under Action create a new self-hosted runner and select the configuration according to your EC2 instance
+- Download and Configure the runner on your EC2 instance too
+- and make changes in the .github/workflows/ file from Github hosted to Self Hosted
